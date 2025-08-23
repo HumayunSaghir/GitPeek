@@ -39,9 +39,20 @@ form.addEventListener('submit', (e)=>{
     
     // Now inject your data into the html page.
     setTimeout(function(){
-        
-        if(xhr.status === 404 || xhr.status === 500 || xhr.status === 0){
-            userName.innerText = "User Not Found!"
+        console.log(data)
+        if(xhr.status === 404 || xhr.status === 500 || xhr.status === 0 || xhr.status === 403){
+            if(xhr.status === 403){
+                userName.innerText = "Service unavailable try again in an hour!"
+            }
+            else if(xhr.status === 404){
+                userName.innerText = "User Not Found!"
+            }
+            else if(xhr.status === 500){
+                userName.innerText = "Server Error Try Again!"
+            }
+            else if(xhr.status === 0){
+                userName.innerText = "Network Error. Try Again!"
+            }
             followers.innerText = ""
             following.innerText = ""
             profileUrl.innerText = ""
