@@ -1,0 +1,83 @@
+/* Small Mobile Phones */
+@media (max-width:320px) {
+    .innerBox{
+        width: 90%;
+        height: 95vh;
+    }
+
+    .myInput{
+        margin-top:1vh;
+        width: 100%;
+    }
+
+    .submitButton{
+        width: 25vw;
+        margin-left: 13vw;
+    }
+
+    .urlP{
+        text-align: center;
+    }
+}
+
+/* Normal Mobile Phones */
+@media (min-width:321px) and (max-width:600px) {
+    .innerBox{
+        width: 90%;
+    }
+
+    .data-section{
+        width: 100%;
+    }
+
+    .myInput{
+        width: 70vw;
+    }
+
+    .submitButton{
+        width:25vw;
+        margin-left: 31%;
+    }
+
+    .urlP{
+        text-align: center;
+    }
+}
+
+/* Small Tablets */
+@media (min-width:601px) and (max-width:768px) {
+    .innerBox{
+        width: 70vw;
+        font-size: 1.2rem;
+    }
+
+    .myInput{
+        width: 50vw;
+        font-size: 1.2rem;
+    }
+
+    .submitButton{
+        width: 11vw;
+        margin-left: 20vw;
+        font-size: 1.2rem;
+    }
+}
+
+/* Normal Tablets */
+@media (min-width:769px) and (max-width:1024px) {
+    .innerBox{
+        width: 60vw;
+        font-size: 1.2rem;
+    }
+
+    .myInput{
+        width: 45vw;
+        font-size: 1.2rem;
+    }
+
+    .submitButton{
+        width: 12vw;
+        margin-left: 16vw;
+        font-size: 1.2rem;
+    }
+}
